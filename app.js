@@ -1,6 +1,5 @@
-var nome = "Romulo";
+var clc = require("cli-color");
 
-function exibirMensagem(nome){
-    console.log("Olá, "+nome );
-}
-exibirMensagem(nome);
+console.log(clc.green("Mensagem verde;"));
+
+console.log(clc.red.bgWhite.underline("Underlined red text on white background."));
