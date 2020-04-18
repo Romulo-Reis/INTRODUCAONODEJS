@@ -1,5 +1,5 @@
-var clc = require("cli-color");
+var funcoes = require("./funcoes");
 
-console.log(clc.green("Mensagem verde;"));
+var resultado = funcoes.validarUsuario("Romulo","123");
 
-console.log(clc.red.bgWhite.underline("Underlined red text on white background."));
+console.log(resultado);
