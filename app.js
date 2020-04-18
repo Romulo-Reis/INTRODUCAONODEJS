@@ -1,5 +1,8 @@
-var funcoes = require("./funcoes");
+var http = require("http");
 
-var resultado = funcoes.validarUsuario("Romulo","123");
+http.createServer(function(request,response){
+    response.write("Primeiros passos de Node.js");
+    response.end();
+}).listen(8081);
 
-console.log(resultado);
+console.log("Servidor rodando em http://localhost:8081");
